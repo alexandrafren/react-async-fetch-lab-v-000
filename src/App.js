@@ -14,5 +14,9 @@ export default class App extends React.Component {
       .then(res => res.json())
       .then(json => this.setState({data: json}))
   }
-  
+
+  render(){
+    return this.state.data
+  }
+
 }
